@@ -1,0 +1,7 @@
+google-cloud-pubsub
+python-dotenv
+sqlalchemy
+pandas
+python-dotenv
+psycopg2-binary
+PyYAML

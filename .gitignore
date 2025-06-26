@@ -1,0 +1,79 @@
+# Project-specific: temporary and documentation folders
+tmp/*
+!/tmp/.gitkeep
+data/
+output/
+docs/
+*.log
+
+# Google Cloud / BigQuery
+google_credentials.json
+gcloud_auth.json
+gcs_keys.json
+
+# Secrets and configs
+.env
+.env.*
+!/.env.example
+secrets.yaml
+/config/*
+!/dataflow/config/config.yaml.example
+!/publisher/config/config.yaml.example
+config.yaml
+config/*.yaml
+config/*.json
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Coverage and test reports
+.cache
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.nox/
+
+# Docker
+docker-compose.override.yml
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+*.spec
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Ruff
+.ruff_cache/
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# PyInstaller
+*.manifest
+
+# Others
+.DS_Store

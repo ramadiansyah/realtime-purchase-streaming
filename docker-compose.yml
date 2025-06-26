@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  retail-db:
+    image: postgres:13
+    container_name: retail_postgres_3
+    environment:
+      POSTGRES_DB: ${RETAIL_POSTGRES_DB}
+      POSTGRES_USER: ${RETAIL_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${RETAIL_POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - retail_pgdata_3:/var/lib/postgresql/data
+      - ./scripts/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+
+volumes:  
+  retail_pgdata_3:

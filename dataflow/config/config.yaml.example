@@ -1,0 +1,10 @@
+project_id: "your_project_id"
+gcp_sa_email: "your_gcp_sa_email@your_project_id.iam.gserviceaccount.com"
+
+pubsub_topic: "your_pubsub_topic"
+
+gcs_dataflow: "your_gcs_dataflow"
+dataflow_job_name: "your_dataflow_job_name"
+
+bq_table: "your_bq_table_for_raw"
+bq_table_transformed: "your_bq_table_for_transformed"
